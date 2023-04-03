@@ -7,7 +7,9 @@
 // @match https://*.gyazo.com/*
 // ==/UserScript==
 
-// A userscript for Tampermonkey which improves Gyazo. All gyazo image tabs will auto-close and the direct image link will be copied to the clipboard. Inspired by https://gist.github.com/paulirish/1470003
+// A userscript for Tampermonkey which improves Gyazo. 
+// All gyazo image tabs will auto-close and the direct image link will be copied to the clipboard. 
+// Inspired by https://gist.github.com/paulirish/1470003
 
 if (/\/\/gyazo\.com\/[0-9a-zA-Z]{15}/.test(location.href)) {
     var newLink = location.protocol + '//i.' + location.host + location.pathname + '.png';
